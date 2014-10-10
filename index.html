@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roy Wenman</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/demo.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <!--<nav class="top-bar sticky" data-topbar>
+      <ul class="title-area">
+	<li class="name">
+	  <h1><a href="#">My Site</a></h1>
+	</li>
+	<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+    
+      <section class="top-bar-section">
+	<ul class="right">
+	  <li class="active"><a href="#">Right Button Active</a></li>
+	  <li class="has-dropdown">
+	    <a href="#">Right Button Dropdown</a>
+	    <ul class="dropdown">
+	      <li><a href="#">First link in dropdown</a></li>
+	    </ul>
+	  </li>
+	</ul>
+    
+	<ul class="left">
+	  <li><a href="#">Left Nav Button</a></li>
+	</ul>
+      </section>
+    </nav>-->
+    
+    <div id="slides">
+      <ul class="slides-container">
+	<li id="slide1">
+	  <div class="container" id="slide1">
+	    <span class="myName">
+	      Roy Wenman
+	    </span>
+	    
+	    <span class="mySkills">
+		Web Developer
+		<br />
+		PHP, HTML5, CSS3, Javascript
+		<br />
+		<script type="text/javascript" language="javascript">
+		<!--
+		// Email obfuscator script 2.1 by Tim Williams, University of Arizona
+		// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+		// This code is freeware provided these four comment lines remain intact
+		// A wizard to generate this code is at http://www.jottings.com/obfuscator/
+		{ coded = "NvlGXlLIV@oIIorvGXdr.wIG"
+		  key = "0ER75xXOmfZHv1ojArWNqhBCiuFyzQknGcs34TIKDLpPa9MYdbeVg6UlSw8J2t"
+		  shift=coded.length
+		  link=""
+		  for (i=0; i<coded.length; i++) {
+		    if (key.indexOf(coded.charAt(i))==-1) {
+		      ltr = coded.charAt(i)
+		      link += (ltr)
+		    }
+		    else {     
+		      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+		      link += (key.charAt(ltr))
+		    }
+		  }
+		document.write("<a href='mailto:"+link+"' class='email'>Get In Touch</a>")
+		}
+		//-->
+		</script>
+		<noscript>Sorry, you need Javascript on to email me.</noscript>
+	    </span>
+	  </div>
+	</li>
+	<!--<li id="slide2">
+	  <div class="container">
+	    
+	  </div>
+	</li>
+	<li>
+	  <div class="container">
+	    Contact
+	  </div>
+	</li>-->
+      </ul>
+      <!--<nav class="slides-navigation nav-slide">
+	<a class="next" href="#">
+	    <span class="icon-wrap">?&gt;</span>
+	    <div>
+		    <h3>Curriculum Vitae</h3>
+		    <img src="img/2.png" alt="Next thumb"/>
+	    </div>
+	</a>
+	<a class="prev" href="#">
+	  <span class="icon-wrap">&lt;?</span>
+	  <div>
+		  <h3>Nothing to Loose <span>by Zach Wallis</span></h3>
+		  <img src="img/1.png" alt="Previous thumb"/>
+	  </div>
+	</a>
+      </nav>-->
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/jquery.superslides.min.js"></script>
+    <script>
+      $(document).foundation();
+      $(document).ready(function() {
+	/*$('#slides').superslides({
+	  nav_class: 'slides-navigation',
+	  pagination: true
+	});*/
+	/* After 2 seconds load my name */
+	setTimeout(function(){
+		   $('.myName').addClass('loaded');
+		   }, 1000);
+	
+	setTimeout(function(){
+		   $('.mySkills').addClass('loaded');
+		   }, 2000);
+	
+      });
+    </script>
+  </body>
+</html>
